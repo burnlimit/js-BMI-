@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bmicss.css">
+</head>
+<body>
+
+
+<div class="wrap">
+<div class="head">
+	<img src="assets/BMICLogo.png" class="bmiimg">
+    <div class="cm"> 
+	<span>身高 cm</span><br>
+	<input maxlength="3" oninput="value=value.replace(/[^\d]/g,'')"type="text" placeholder="請輸入身高" class="height">
+</div>
+<div class="kg">
+    <span>體重 kg</span><br>
+    <input maxlength="3" oninput="value=value.replace(/[^\d]/g,'')" type="text" placeholder="請輸入體重" class="weight">
+</div>
+
+<div class="sent">
+	<p class="result">看結果</p>
+</div>
+<div class="changeresult">
+<div class="resultcolor">
+
+	
+</div>
+</div>
+</div>
+
+
+
+  
+<div class="content">
+	<h1>BMI紀錄</h1>
+	<ul class="bmivalue">
+	</ul>
+    <div class="clearfix"></div>
+    
+	  <ul class="page">
+	  	
+	  </ul>
+      <div class="clearfix"></div>
+</div>
+<div class="footer"><img src="assets/BMICLogo.png"></div>
+</div>
+
+<div class="a123"></div>
+
+<script type="text/javascript" src="js/bml.js"></script>
+</body>
+</html>

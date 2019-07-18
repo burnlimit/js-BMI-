@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+
+}
+.head{
+	height: 250px;
+	background: #3c3c3c;
+	position: relative;
+}
+.content{
+	background:#f0f0f0;
+	
+}
+
+.content h1{
+	text-align: center;
+	font-size: 35px;
+	padding: 20px;
+}
+.bmiimg{
+	position: absolute;
+	left: 162px;
+	top:38px;
+}
+
+.height,.weight{
+	border-radius: 5px;
+	border: 2px solid 	#c6a300;
+	background: 	#7b7b7b;
+	height: 20px;
+	width: 200px;
+	margin-top:5px;
+	font-size: 18px;
+	padding-left: 6px;
+}
+.cm,.kg{
+	padding-top: 30px;
+	padding-left:400px;
+}
+
+.cm,.kg span{
+	color:#c6a300;
+	font-size: 13px;
+}
+
+
+::-webkit-input-placeholder{
+	color:#d0d0d0;
+	padding: 6px;
+	font-size: 17px;
+	font-family: '標楷體';
+}
+
+:-moz-placeholder{
+	color:#d0d0d0;
+	padding: 10px;
+	font-size: 17px;
+}
+::-moz-placeholder{
+	color:#d0d0d0;
+	padding: 10px;
+	font-size: 17px;
+}
+
+
+.sent{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background:	#eac100;
+	border-radius: 50%;
+	right: 230px;
+	bottom: 100px;
+	cursor: pointer;
+	transition: 1000;
+
+}
+.sent:hover{
+	background:#FFFF33;
+}
+.sent:active{
+	background: #FFCC22;
+}
+
+.hideclass{
+	display: none;
+}
+.hideresult {
+	display: none;
+}
+.result{
+	text-align: center;
+	margin-top: 41px;
+	font-family: '標楷體';
+	font-size: 20px;
+}
+.resultcolor{
+	display: none;
+}
+
+.resultblue{
+    position: absolute;
+	height: 100px;
+	width: 100px;
+	border: 5px	#33CCFF solid;
+	border-radius: 50%;
+	right: 230px;
+	bottom: 100px;
+	color: 	#33CCFF;
+}
+.resultblue .iconbox{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 5px solid #3c3c3c ;
+   background: 	#33CCFF;
+   position: absolute;
+   bottom: 0px;
+   right: -11px;
+   cursor: pointer;
+}
+
+
+.resultred{
+    position: absolute;
+	height: 100px;
+	width: 100px;
+	border: 5px	red solid;
+	border-radius: 50%;
+	right: 230px;
+	bottom: 100px;
+	color: 	red;
+}
+.resultred .iconbox{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 5px solid #3c3c3c ;
+   background: 	red;
+   position: absolute;
+   bottom: 0px;
+   right: -11px;
+   cursor: pointer;
+}
+.resultorange{
+    position: absolute;
+	height: 100px;
+	width: 100px;
+	border: 5px	orange solid;
+	border-radius: 50%;
+	right: 230px;
+	bottom: 100px;
+	color: 	orange;
+}
+.resultorange .iconbox{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 5px solid #3c3c3c;
+   background: 	orange;
+   position: absolute;
+   bottom: 0px;
+   right: -11px;
+   cursor: pointer;
+}
+.resultgreen{
+    position: absolute;
+	height: 100px;
+	width: 100px;
+	border: 5px	green solid;
+	border-radius: 50%;
+	right: 230px;
+	bottom: 100px;
+	color: 	green;
+}
+.resultgreen .iconbox{
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   border: 5px solid #3c3c3c ;
+   background: 	green;
+   position: absolute;
+   bottom: 0px;
+   right: -11px;
+   cursor: pointer;
+}
+
+
+
+.changeresult img{
+   position: absolute;
+   padding:3px;
+   top:1px;
+   left: 3px;
+   display: block;
+}
+.changeresult  p{
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top:33px;
+	left:25px;
+}
+
+.changeresult p span{
+    font-size: 10px;
+    position: absolute;
+    bottom: -14px;
+    left: 15px;
+}
+
+.small{
+	font-size: 10px;
+	margin-right: 5px;
+}
+.lage{
+	font-size: 20px;
+}
+.typebmi{
+	margin-right: 30px;
+	font-size: 22px;
+	padding-bottom: 5px;
+}
+
+.bmivalue{
+	padding-bottom: 40px;
+}
+.allcolor{
+	margin-bottom:16px;
+	
+}
+.allcolor ul{
+	height: 60px;
+	background: white;
+	width: 650px;
+	box-shadow: 1px 1px #bebebe;
+	margin-left: 160px;
+	position: relative;
+}
+
+.allcolor ul li{
+	float: left;
+	margin-right: 30px;
+    padding-top: 23px;
+}
+.allcolor ul .colorred{
+	width: 7px;
+    background: red;
+    height: 37px;
+    box-shadow: 1px 1px black;
+
+}
+
+
+
+.allcolor ul .colorblue{
+	width: 7px;
+    background: blue;
+    height: 37px;
+    box-shadow: 1px 1px black;
+
+}
+
+
+
+
+
+.allcolor ul .colorgreen{
+	width: 7px;
+    background: green;
+    height: 37px;
+    box-shadow: 1px 1px black;
+
+}
+
+.allcolor ul .coloryellow{
+	width: 7px;
+    background: yellow;
+    height: 37px;
+    box-shadow: 1px 1px black;
+
+}
+
+.allcolor ul .colororange{
+	width: 7px;
+    background: orange;
+    height: 37px;
+    box-shadow: 1px 1px black;
+
+}
+
+.allcolor ul .colorred{
+	width: 7px;
+    background: red;
+    height: 37px;
+    box-shadow: 1px 1px black;
+
+}
+.clearfix{
+	clear: both;
+}
+
+
+.page{
+	width: 500px;
+	height: 30px;
+	margin-left:438px;
+}
+.page li{
+	float: left;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: 1px solid black;
+	border-radius: 10%;
+    background: black;
+
+}
+.page li a{
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	padding-right:5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 1px;
+	color: white;
+}
+
+.page li a:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+.xx{
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	right:0;
+	top:0;
+	cursor: pointer;
+}
+
+.footer{
+	height: 150px;
+	background:#FFFF77;
+	position: relative;
+}
+.footer img{
+	position: absolute;
+	top:22px;
+	left: 433px;
+}
